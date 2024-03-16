@@ -83,6 +83,38 @@ body {
     transition: 1s;
 }
 
+.profile {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.profile button {
+    background-color: #F27A61;
+    margin: auto;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.profile button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.profile h1 {
+    color: #F27A61;
+    font-size: 50px;
+}
+
+.profile li {
+    color: #1B80F2;
+    list-style: none;
+    font-size: 25px;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
     .slider {

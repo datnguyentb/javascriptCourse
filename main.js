@@ -3,6 +3,7 @@ let items = document.querySelectorAll('.slider .list .item')
 let dots = document.querySelectorAll('.slider .dots li');
 let prev = document.getElementById('prev')
 let next = document.getElementById('next');
+let profile = document.querySelector('.profile button');
 
 let active = 0;
 let lengthItems = items.length - 1;
@@ -23,6 +24,15 @@ prev.onclick = function() {
         active -= 1;
     }
     reloadSlider();
+}
+
+profile.onclick = function() {
+    let password = prompt("Enter your password")
+    if(password == 2005) {
+        document.querySelector('.profile ul').innerHTML = "<h1>I Love You 🫰</h1>"
+    } if(password == 1999) {
+        document.querySelector('.profile ul').innerHTML = "<li>Mã số thuế: 8759747031</li><li>Mã BHXH: 0131435544</li>"
+    }
 }
 
 let refreshSlider = setInterval(()=> {
